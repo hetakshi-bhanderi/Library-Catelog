@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library Catalog</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Library Catalog</h2>
+        <input type="text" id="title" placeholder="Book Title">
+        <input type="text" id="author" placeholder="Author">
+        <button onclick="addBook()">Add</button>
+        <br>
+        <input type="text" id="search" placeholder="Search by author or book title">
+        <button onclick="searchBooks()">Search</button>
+        <br>
+
+        <button onclick="displayBook('all')">All</button>
+        <button onclick="displayBook('available')">Available</button>
+        <button onclick="displayBook('borrowed')">Borrowed</button>
+
+        <table id="bookTable">
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
